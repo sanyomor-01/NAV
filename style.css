@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #2a2828
+    background: #f5f3f3
 }
 li,a,button{
     font-family: 'Montserrat', sans-serif;
@@ -12,6 +12,7 @@ li,a,button{
     color:#edf0f1;
     text-decoration: none;
 }
+
 header{
     display: flex;
     justify-content: space-between;
@@ -19,7 +20,6 @@ header{
     text-align: center;
     padding: 30px 10%;
     
-
 }
 
 
@@ -72,4 +72,48 @@ button:hover{
 
     background-color:#fff;
     color: #08A0F7;
+}
+
+form {
+    width: 600px;
+    margin: auto;
+    padding: 10px;
+}
+
+form > ul{
+    display: grid;
+    gap: 10px;
+}
+form ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+label {
+    color: #08A0F7;
+}
+form ul li input,label, ul li textarea{
+    font-size: 16px;
+    font-weight: 400;
+}
+form ul li input{
+    padding: 8px 12px;
+    border: 2px solid gainsboro;
+    border-radius: 10px;
+    color: rgb(51, 50, 50);
+    
+}
+input{
+    outline: none;
+}
+input:focus, textarea:focus {
+    border: 2px solid #08A0F7;
+}
+ul li textarea {
+    border: 2px solid gainsboro;
+    border-radius: 10px;
+    height: 150px;
+    padding: 8px 12px;
+    color: rgb(51, 50, 50);
+    outline: none;
 }
